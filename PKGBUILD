@@ -1,7 +1,7 @@
 # Maintainer: David K david.dk949@gmail.com
 pkgname=git-tools
-pkgver=20230426_1
-pkgrel=1
+pkgver="unknown"
+pkgrel=0
 pkgdesc="A set of shell scripts to help with the use of git"
 arch=('any')
 url="https://github.com/dk949/git-tools"
