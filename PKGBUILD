@@ -4,7 +4,7 @@ pkgver="unknown"
 pkgrel=0
 pkgdesc="A set of shell scripts to help with the use of git"
 arch=('any')
-url="https://github.com/dk949/git-tools"
+url="https://github.com/dk949/$pkgname"
 license=('MIT')
 depends=('git')
 makedepends=('git')
@@ -22,11 +22,7 @@ provides=(
         'git-today'
         'git-view'
         )
-backup=()
-options=()
-install=
-source=("git+https://github.com/dk949/$pkgname")
-noextract=()
+source=("git+$url")
 md5sums=() #autofill using updpkgsums
 sha256sums=('SKIP')
 
