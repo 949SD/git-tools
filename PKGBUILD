@@ -1,10 +1,11 @@
 # Maintainer: David K david.dk949@gmail.com
-pkgname=git-tools
+_pkgname=git-tools
+pkgname="${_pkgname}-949sd"
 pkgver="unknown"
 pkgrel=0
 pkgdesc="A set of shell scripts to help with the use of git"
 arch=('any')
-url="https://github.com/dk949/$pkgname"
+url="https://github.com/dk949/$_pkgname"
 license=('MIT')
 depends=('git')
 makedepends=('git')
@@ -22,7 +23,7 @@ provides=(
         'git-today'
         'git-view'
         )
-source=("git+$url")
+source=("$pkgname::git+$url")
 md5sums=() #autofill using updpkgsums
 sha256sums=('SKIP')
 
