@@ -19,6 +19,7 @@ provides=(
         'git-log-q'
         'git-nuke'
         'git-open-remote'
+        'git-profile'
         'git-remind'
         'git-today'
         'git-view'
