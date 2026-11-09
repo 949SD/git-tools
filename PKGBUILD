@@ -1,4 +1,4 @@
-# Maintainer: David K david.dk949@gmail.com
+# Maintainer: David K dk949.david@gmail.com
 _pkgname=git-tools
 pkgname="${_pkgname}-949sd"
 pkgver="unknown"
@@ -7,15 +7,22 @@ pkgdesc="A set of shell scripts to help with the use of git"
 arch=('any')
 url="https://github.com/dk949/$_pkgname"
 license=('MIT')
-depends=('git')
+depends=(
+        'awk'
+        'coreutils'
+        'git'
+        'grep'
+        'ncurses'
+        'sed'
+        'sh'
+        )
 makedepends=('git')
-optdepends=('firefox: (Or any other browser) used by open-remote')
+optdepends=('xdg-utils: open the remote in the default browser with git-open-remote (or set BROWSER)')
 provides=(
+        'git-before'
         'git-cat-old'
         'git-delref'
         'git-get-default'
-        'git-goback'
-        'git-ignore'
         'git-log-q'
         'git-nuke'
         'git-open-remote'
